@@ -7,54 +7,36 @@
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage[colorlinks, linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
-
+\name{朱铖恺}
 % {E-mail}{mobilephone}{homepage}
 % be careful of _ in emaill address
-\contactInfo{my\_address@yuanbin.me}{(+86) 131-221-87xxx}{http://www.yuanbin.me}
+%\contactInfo{zck921031@qq.com}{}{}
+\contactInfo{zck921031@qq.com}{(+86) 183-2248-xxxx}{}
 % {E-mail}{mobilephone}
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{天津大学}\ 天津}{2015 -- 至今}
+\textit{在读工学硕士}\ 计算机科学与技术， 预计 2018 年 1 月毕业
+\datedsubsection{\textbf{东南大学}\ 江苏， 南京}{2011 -- 2015}
+\textit{工学学士}\ 测控技术与仪器
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{东南大学在线评测系统·部署与维护}}{2013年3月 -- 2014年6月}
+\role{SeuOJ@CentOS}{个人项目，与软件学院合作}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+基于开源在线评测系统\href{https://github.com/zhblue/hustoj}{hustoj}项目，二次开发并部署于CentOS服务器，作为东南大学程序设计竞赛的判题服务器使用。
+ \href{http://acm.seu.edu.cn/oj/}{http://acm.seu.edu.cn/oj}
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 负责后端判题程序的部署和维护。
+  \item 发现并修复了判题程序降权过早导致的线程阻塞问题，提高了判题效率。
+  \item 成功举办2013、2014年东南大学程序设计竞赛，5小时无阻塞评测多达2883份代码。
 \end{itemize}
 \end{onehalfspacing}
 
@@ -68,21 +50,29 @@ xxx后端开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: C++, Java, Python
+  \item 研究领域: 深度学习(with \href{http://caffe.berkeleyvision.org/}{caffe} and \href{http://deeplearning.net/software/theano/}{theano}), 计算机视觉(with \href{http://opencv.org/}{OpenCV})
+  \item 平台: 多年Linux使用经验，熟悉命令与配置，能通过编写脚本提高效率。
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+
+\begin{itemize}[parsep=0.5ex]
+\item \datedline{CCF全国青年大数据创新大赛·中文地址魔方大赛 \textit{冠军}}{2016 年 1 月}
+\item \datedline{ACM国际大学生程序设计竞赛(ACM-ICPC)区域赛 \textit{北京赛区金奖,杭州赛区金奖,广州赛区银奖,长沙赛区银奖}}{2013 年 10月 -- 2014 年 11 月}
+\item \datedline{华为“编码合伙人”大赛 \textit{季军}}{2014 年 7 月}
+\item \datedline{“掌赢杯”南京市大学生程序设计大赛 \textit{亚军}}{2014 年 5 月}
+\item \datedline{“华为杯”苏鲁高校大学生程序设计大赛 \textit{亚军}}{2014 年 5 月}
+\item \datedline{2015-2016一等奖学金、正保教育奖学金、星网锐捷奖学金、张志伟奖学金}{2012年 -- 2015年}
+\end{itemize}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 语言: 英语(CET6)， 能流畅阅读英文资料，在英文邮件列表、Github 等社区正常交流。
+  \item 能够使用 LaTeX 及 Markdown 写作，具备良好的交流能力。
+  \item \faGithub Github \href{https://github.com/zck921031}{https://github.com/zck921031}
+  \item Topcoder(Top Rating: 1819):\  \href{https://www.topcoder.com/members/zck921031/}{https://www.topcoder.com/members/zck921031/}
 \end{itemize}
 
 %% Reference
