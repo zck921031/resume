@@ -1,0 +1,79 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[colorlinks, linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
+\usepackage{float}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\name{Zhu Chengkai 朱铖恺}
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+%\contactInfo{zck921031@qq.com}{}{}
+\contactInfo{zck921031@qq.com}{(+86) 183-2248-0965}{}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{\faGraduationCap\  Education}
+\datedsubsection{\textbf{Tianjin University} Tianjin}{2015 -- Present}
+\textit{Master Student} in Computer Science, expected January 2018
+\datedsubsection{\textbf{Southeast University} Nanjing, Jiangsu}{2011 -- 2015}
+\textit{Bachelor Student} in Instrument and Meter Engineering
+
+\section{\faHeartO\ Honors and Awards}
+\begin{itemize}[parsep=0.5ex]
+	\item \textbf{Two Gold Medals, Two Silver Medals} \datedline{The ACM International Collegiate Programming Contest (ACM-ICPC) regional contests }{Oct. 2013 -- Nov. 2014}
+	\item \textbf{First Place} \datedline{Chinese Address Magic Cube, CCF National Youth Big-Data Innovation Contest}{Jan. 2016}
+%	\item \textbf{Second Place} \datedline{Zhangying Cup Nanjing Collegiate Programming Contest}{May. 2014}
+%	\item \textbf{Second Place} \datedline{Huawei Cup Su-Lu Collegiate Programming Contest}{May. 2014}
+	\item \textbf{Second Place} \datedline{Zhangying Cup Nanjing Collegiate Programming Contest}{May. 2014}
+	\datedline{Huawei Cup Su-Lu Collegiate Programming Contest}{May. 2014}
+	\item \textbf{Third Place} \datedline{Huawei Coding Parters}{July. 2014}
+	\item \textbf{Scholarship} \datedline{The school's first academic scholarship, Zhengbao-Education Scholarship, Xingwangruijie Scholarship, Zhang-Zhiwei Scholarship}{2012 -- 2015}
+\end{itemize}
+
+\section{\faUsers\ Projects}
+\datedsubsection{\textbf{Southeast University Online Judge System·Deployment and maintenance}}{March 2013 -- June 2014}
+%\begin{figure}[H]	
+%	\includegraphics[width=1cm]  {figures/seuoj}
+%\end{figure}
+\role{SeuOJ@CentOS}{Personal project, cooperation with College of Software Engineering}
+\begin{onehalfspacing}
+Based on \href{https://github.com/zhblue/hustoj}{HustOJ} project, we develop the SeuOJ system and deploy it on a Cent-OS server, running for Southeast University Programming Contest.
+Visit it at \href{http://acm.seu.edu.cn/oj/}{http://acm.seu.edu.cn/oj}.
+\begin{itemize}
+  \item Responsible for the deployment and maintenance of the back-end daemon programming.
+  \item Find and fix a thread blocking issue caused by switching permission improperly. The efficiency of judging has been greatly improved.
+  \item We successfully hosted the 2013 and 2014 Southeast University Programming Contest, with judging up to 2883 copies of submits within 5 hours.
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faCogs\ IT Skills}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: Familiar with C++, Java, Python.
+  \item Research Fields: Deep Learning(with \href{http://caffe.berkeleyvision.org/}{Caffe} and \href{http://deeplearning.net/software/theano/}{Theano}), Computer Vision(with \href{http://opencv.org/}{OpenCV}).
+%  \item Platform: Linux, familiar with commands and configures.
+\end{itemize}
+
+\section{\faInfo\ Miscellaneous}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item Language: English(CET6), referencing English papers and documents in daily life, communicating with others on GitHub and other English Q-A forums.
+  \item Writing with LaTeX and Markdown, good communication skills.
+  \item \faGithub Github \href{https://github.com/zck921031}{https://github.com/zck921031}.
+%  \item Topcoder(Top Rating: 1819):\  \href{https://www.topcoder.com/members/zck921031/}{https://www.topcoder.com/members/zck921031/}
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
