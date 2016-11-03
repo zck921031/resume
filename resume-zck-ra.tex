@@ -1,0 +1,89 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[colorlinks, linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{朱铖恺}
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+%\contactInfo{zck921031@qq.com}{}{}
+\centerline{\sffamily\large{\faEnvelope\ {zck921031@qq.com} \textperiodcentered\ \faPhone\ {(+86) 183-2248-0965} \textperiodcentered\ \faBirthdayCake\ {1992.10.31} \textperiodcentered\ \faHome\ {福建三明}}
+	\vspace{1.5ex} }
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{天津大学}\ 天津}{2015 -- 至今}
+\textit{在读工学硕士}\ 计算机科学与技术， 预计 2018 年 1 月毕业
+\datedsubsection{\textbf{东南大学}\ 江苏， 南京}{2011 -- 2015}
+\textit{工学学士}\ 测控技术与仪器
+
+\section{\faSearch\ 科研经历}
+\begin{itemize}[parsep=0.5ex]
+	\item \textbf{研究领域}:  深度学习。主要从事深度学习相关研究工作，熟悉C++与Python，能熟练使用\href{http://caffe.berkeleyvision.org/}{Caffe}、\href{http://deeplearning.net/software/theano/}{Theano}、\href{https://keras.io/}{Keras}等代码库实现深度学习模型。
+	\item \textbf{编程语言及平台}:  熟悉C++，Java，Python，多年Linux平台工作经验，熟悉命令与配置，能通过编写脚本提高效率。
+\end{itemize}
+主要工作及成果
+\begin{itemize}[parsep=0.5ex]
+\item \textbf{Fuzzy Rough Convolutional Neural Network}: ~基于Keras和Theano，通过修改传统卷积神经网络的损失函数(Cross-entropy Loss)，使得含有概率标签的数据可以用于训练CNN。实验结果表明对于给定任务，通过此方法训练得到的特征，比直接使用ImageNet预训练好的模型更加有效，目前正在撰写论文。
+\item \textbf{基于RNN的空间天气预报}: ~与气象台合作，基于Keras实现SimpleRNN模型，处理时序数据，建立自回归的RNN模型，使用5天历史数据预测未来1天的情况。
+\item \textbf{CCF全国青年大数据创新大赛·京东商品图片分类算法 \textit{\href{http://www.wid.org.cn/data/science/player/competition/detail/rank/232}{Rank 16}}}: ~使用GoogLeNet的Caffe实现，对有标注的图像进行Fine-Tune，实现图像分类算法。
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\begin{itemize}[parsep=0.5ex]
+	\item \datedline{ACM国际大学生程序设计竞赛(ACM-ICPC)区域赛 \textit{北京赛区金奖,杭州赛区金奖,广州赛区银奖,长沙赛区银奖}}{2013 年 10月 -- 2014 年 11 月}
+	\item \datedline{CCF全国青年大数据创新大赛·中文地址魔方大赛 \textit{\href{http://www.wid.org.cn/data/science/player/news/detail/6}{冠军}}}{2016 年 1 月}
+	\item \datedline{华为“编码合伙人”大赛 \textit{季军}}{2014 年 7 月}
+	\item \datedline{“掌赢杯”南京市大学生程序设计大赛 \textit{亚军}}{2014 年 5 月}
+	\item \datedline{“华为杯”苏鲁高校大学生程序设计大赛 \textit{亚军}}{2014 年 5 月}
+	\item \datedline{华为奖学金，一等奖学金、正保教育奖学金、星网锐捷奖学金、张志伟奖学金}{2012年 -- 2016年}
+\end{itemize}
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{东南大学在线评测系统·部署与维护}}{2013年3月 -- 2014年6月}
+\role{SeuOJ@CentOS}{个人项目，与软件学院合作}
+\begin{onehalfspacing}
+基于开源在线评测系统\href{https://github.com/zhblue/hustoj}{hustoj}项目，二次开发并部署于CentOS服务器，作为东南大学程序设计竞赛的判题服务器使用。
+ \href{http://acm.seu.edu.cn/oj/}{http://acm.seu.edu.cn/oj}
+%\begin{itemize}
+%  \item 负责后端判题程序的部署和维护。
+%  \item 发现并修复了判题程序降权过早导致的线程阻塞问题，提高了判题效率。
+%  \item 成功举办2013、2014年东南大学程序设计竞赛，5小时无阻塞评测多达2883份代码。
+%\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+%
+%\section{\faCogs\ IT 技能}
+%% increase linespacing [parsep=0.5ex]
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 语言: 英语(CET6)， 能流畅阅读英文资料，在英文邮件列表、Github 等社区正常交流。
+  \item 能够使用 LaTeX 及 Markdown 写作，具备良好的交流能力。
+  \item \faGithub Github \href{https://github.com/zck921031}{https://github.com/zck921031}
+  \item Topcoder(Top Rating: 1819):\  \href{https://www.topcoder.com/members/zck921031/}{https://www.topcoder.com/members/zck921031/}
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
