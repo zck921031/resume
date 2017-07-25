@@ -16,8 +16,9 @@
 % {E-mail}{mobilephone}{homepage}
 % be careful of _ in emaill address
 %\contactInfo{zck921031@qq.com}{}{}
-\centerline{\sffamily\large{\faEnvelope\ {zck921031@qq.com} \textperiodcentered\ \faPhone\ {(+86) 183-2248-0965} \textperiodcentered\ \faBirthdayCake\ {1992.10.31} \textperiodcentered\ \faHome\ {福建三明}}
-	\vspace{1.5ex} }
+%\centerline{\sffamily\large{\faEnvelope\ {zck921031@qq.com} \textperiodcentered\ \faPhone\ {(+86) 183-2248-0965} \textperiodcentered\ \faBirthdayCake\ {1992.10.31} \textperiodcentered\ \faHome\ {福建三明}}
+%	\vspace{1.5ex} }
+\centerline{\sffamily\large{\faEnvelope\ {zck921031@qq.com} \ \faWeixin\ zck921031 \ \faPhone\ {(+852) 6764-2081} \ \faBirthdayCake\ {1992.10.31} \ \faHome\ {福建三明}} \vspace{1.0ex}}
 % {E-mail}{mobilephone}
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
@@ -28,28 +29,40 @@
 \datedsubsection{\textbf{东南大学}\ 江苏， 南京}{2011 -- 2015}
 \textit{工学学士}\ 测控技术与仪器
 
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{香港科技大学}\ 香港}{2017年4月 -- 至今}
+\role{研究助理 (Research Assistant)}{\ 计算机科学与工程系}
+于2017年4月加入\textsl{基于异构大数据的智能交通应用}项目，主要负责将计算机视觉和深度学习算法应用于监控视频分析。
+我们团队基于密度图估计的策略，实现了密集人群场景下的人数估计。
+目前我们致力于密集人群的流向估计和异常事件检测，以避免潜在危险事故的发生。
+
+\section{\faSearch\ 科研与项目}
+\datedsubsection{\textbf{基于深度学习的模糊图像分类}}{2016年8月 -- 至今}
+\role{研究深度网络的训练方法}{}
+\begin{onehalfspacing}
+	此项目致力于将深度卷积神经网络用于模糊图像分类，例如人脸表情的强度预测。我们发现常用的损失函数在这个问题中表现的不好。因此，我们在这个工作中提出了一个新的模糊粗糙损失函数，通过最小化模糊分类不确定度训练深度网络。由于不同的人对同样的情感表达各不相同，而我们无法收集所有人的数据，因此我们进一步采用了多任务对抗损失函数进行迁移学习。
+\end{onehalfspacing}
+\datedsubsection{\textbf{东南大学在线评测系统}}{2013年3月 -- 2014年6月}
+\role{SeuOJ@CentOS}{与软件学院合作}
+\begin{onehalfspacing}
+	基于开源在线评测系统\href{https://github.com/zhblue/hustoj}{HustOJ}项目，二次开发并部署于CentOS服务器。我的工作是部署和维护后端判题守护程序。在项目过程中我发现HustOJ项目的判题程序在CentOS 6下存在线程阻塞问题。通过调整降权顺序，修复了该问题，提高了服务器的并发判题效率。可以通过\href{http://acm.seu.edu.cn/oj/}{http://acm.seu.edu.cn/oj}访问。
+	%\begin{itemize}
+	%  \item 负责后端判题程序的部署和维护。
+	%  \item 发现并修复了判题程序降权过早导致的线程阻塞问题，提高了判题效率。
+	%  \item 成功举办2013、2014年东南大学程序设计竞赛，5小时无阻塞评测多达2883份代码。
+	%\end{itemize}
+\end{onehalfspacing}
+
 \section{\faHeartO\ 获奖情况}
 \begin{itemize}[parsep=0.5ex]
-	\item \datedline{ACM国际大学生程序设计竞赛(ACM-ICPC)区域赛 \textit{北京赛区金奖,杭州赛区金奖,广州赛区银奖,长沙赛区银奖}}{2013 年 10月 -- 2014 年 11 月}
+	\item \datedline{ACM国际大学生程序设计竞赛(ACM-ICPC)亚洲区域赛 \textit{北京赛区金奖,杭州赛区金奖,广州赛区银奖,长沙赛区银奖}}{2013 年 10月 -- 2014 年 11 月}
 	\item \datedline{CCF全国青年大数据创新大赛·中文地址魔方大赛 \textit{冠军}}{2016 年 1 月}
 	\item \datedline{“掌赢杯”南京市大学生程序设计大赛 \textit{亚军}}{2014 年 5 月}
 	\item \datedline{“华为杯”苏鲁高校大学生程序设计大赛 \textit{亚军}}{2014 年 5 月}
-	\item \datedline{华为“编码合伙人”大赛 \textit{季军}}{2014 年 7 月}
+%	\item \datedline{华为“编码合伙人”大赛 \textit{季军}}{2014 年 7 月}
 	\item \datedline{一等奖学金、华为奖学金、正保教育奖学金、星网锐捷奖学金、张志伟奖学金}{2012年 -- 2016年}
 \end{itemize}
 
-\section{\faUsers\ 项目经历}
-\datedsubsection{\textbf{东南大学在线评测系统·部署与维护}}{2013年3月 -- 2014年6月}
-\role{SeuOJ@CentOS}{个人项目，与软件学院合作}
-\begin{onehalfspacing}
-基于开源在线评测系统\href{https://github.com/zhblue/hustoj}{hustoj}项目，二次开发并部署于CentOS服务器，作为东南大学程序设计竞赛的判题服务器使用。
- \href{http://acm.seu.edu.cn/oj/}{http://acm.seu.edu.cn/oj}
-\begin{itemize}
-  \item 负责后端判题程序的部署和维护。
-  \item 发现并修复了判题程序降权过早导致的线程阻塞问题，提高了判题效率。
-  \item 成功举办2013、2014年东南大学程序设计竞赛，5小时无阻塞评测多达2883份代码。
-\end{itemize}
-\end{onehalfspacing}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -61,18 +74,13 @@
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C++, Java, Python
   \item 研究领域: 深度学习(with \href{http://caffe.berkeleyvision.org/}{caffe} and \href{http://deeplearning.net/software/theano/}{theano}), 计算机视觉(with \href{http://opencv.org/}{OpenCV})
-  \item 平台: 多年Linux使用经验，熟悉命令与配置，能通过编写脚本提高效率。
-\end{itemize}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C++, Java, Python
+%  \item 平台: 多年Linux使用经验，熟悉命令与配置，能通过编写脚本提高效率。
   \item 语言: 英语(CET6)， 能流畅阅读英文资料，在英文邮件列表、Github 等社区正常交流。
   \item 能够使用 LaTeX 及 Markdown 写作，具备良好的交流能力。
   \item \faGithub Github \href{https://github.com/zck921031}{https://github.com/zck921031}
-  \item Topcoder(Top Rating: 1819):\  \href{https://www.topcoder.com/members/zck921031/}{https://www.topcoder.com/members/zck921031/}
+%  \item Topcoder(Top Rating: 1819):\  \href{https://www.topcoder.com/members/zck921031/}{https://www.topcoder.com/members/zck921031/}
 \end{itemize}
 
 %% Reference
